@@ -1,0 +1,140 @@
+
+    /* Estilos para el encabezado (header) */
+header {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior de la página */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo de la página */
+    z-index: 1000; /* Asegura que el logo esté por encima del contenido */
+}
+
+/* Estilos para la imagen del logo */
+header img {
+    width: 130px; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("PROYECTO2024/cars8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .videos-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .video-container {
+        width: 200px;
+        height: 110px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los iframes de los videos */
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(39, 39, 39, 0.1);
+    }
+
+    h1 {
+        font-family:'Lato';
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ff0000;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        font-size: 16px;
+        line-height: 1.5;
+        appearance: none;
+        background-color: #000000;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    select::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(45deg, #ff007a, #ff7f00, #ffff00, #00ff33, #00ffff, #4a86e8, #9a00e6, #ff007a);
+        background-size: 400% 400%;
+        animation: Glow 2s ease infinite;
+        pointer-events: none;
+    }
+
+    @keyframes Glow {
+        0% {
+            filter: hue-rotate(0deg);
+            -webkit-filter: hue-rotate(0deg);
+            -webkit-animation-timing-function: linear;
+        }
+
+        50% {
+            filter: hue-rotate(-180deg);
+            -webkit-filter: hue-rotate(-180deg);
+            -webkit-animation-timing-function: ease-in;
+        }
+
+        100% {
+            filter: hue-rotate(0deg);
+            -webkit-filter: hue-rotate(0deg);
+            -webkit-animation-timing-function: linear;
+        }
+    }
+
+    #modelos,
+    #years {
+        margin-top: 20px;
+        text-align: left;
+        color: #eee;
+    }
+
+    #info {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #ff0000;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .container p {
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .container p:first-child {
+        color: #f70000;
+    }
+
+    .container p:last-child {
+        color: #34d17d;
+}
