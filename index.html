@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CARDATA</title>
+<link rel="stylesheet" type="text/css" href="autos.css">
+<script src="autos.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo1.png" alt="Logo">
+    </header>
+
+<div class="container">
+    <h1>CARDATA</h1>
+    <label for="marca">Marca:</label>
+    <select id="marca" onchange="showModelos()">
+        <option value="">Selecciona una marca</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <!-- Agrega más opciones de marca según sea necesario -->
+    </select>
+
+    <div id="modelos" style="display: none;">
+        <label for="modelo">Modelo:</label>
+        <select id="modelo" onchange="showYears()">
+            <option value="">Selecciona un modelo</option>
+            <!-- Las opciones de modelos se llenarán dinámicamente después de seleccionar la marca -->
+        </select>
+    </div>
+
+    <div id="years" style="display: none;">
+        <label for="year">Año de fabricación:</label>
+        <select id="year" onchange="showInfo()">
+            <option value="">Selecciona un año</option>
+            <!-- Las opciones de años se llenarán dinámicamente después de seleccionar el modelo -->
+        </select>
+    </div>
+
+    <div id="info" style="display: none;">
+        <!-- Aquí se mostrará la información del auto seleccionado -->
+        <p id="tipoMotor"></p> <!-- Espacio para mostrar el tipo de motor -->
+    </div>
+</div>
+
+</body>
+</html>
